@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basic Training</title>
+    <script src="../dist/main.js"></script>
+    <script>
+      window.onload = function () {
+        App.run();
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Find Posts By User ID</h1>
+    <!-- <form id="user-form">
+    </form> -->
+    <input
+      id="user-id"
+      type="text"
+      pattern="[0-9]"
+      title="Find By User ID"
+      placeholder="Find By User ID"
+      required
+    />
+    <button id="submit-user">Find</button>
+    <!-- User info -->
+    <div id="user-info">
+      <h1>User Info</h1>
+      <p>
+        User Id:
+        <span id="user-info-id"></span>
+      </p>
+      <p>
+        Name:
+        <span id="user-info-name"></span>
+      </p>
+      <p>
+        Email:
+        <span id="user-info-email"></span>
+      </p>
+    </div>
+    <!-- bisa pake grid atau table tr th -->
+    <div>
+      <h1>Posts</h1>
+      <button id="submit-post">Find Post</button>
+    </div>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID Post</th>
+          <th>Title</th>
+          <th>Body</th>
+        </tr>
+      </thead>
+      <tbody id="post-table">
+        <!-- Isi -->
+      </tbody>
+    </table>
+  </body>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      background-color: #fff;
+      margin-left: 20px;
+    }
+  </style>
+</html>
